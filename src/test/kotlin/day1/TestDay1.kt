@@ -1,3 +1,5 @@
+import day1.solveA
+import day1.solveB
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 

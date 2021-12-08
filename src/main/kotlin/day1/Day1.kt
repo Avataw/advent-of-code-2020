@@ -1,3 +1,5 @@
+package day1
+
 fun solveA(input: List<String>): Int {
 
     var result = 0;
