@@ -33,7 +33,7 @@ class Passport(input: List<String>, onlyCheckFieldExistence: Boolean = false) {
     }
 
 
-    fun validateField(label: String, value: String): Boolean {
+    private fun validateField(label: String, value: String): Boolean {
 
         return when (label) {
             "byr" -> parseInt(value) in 1920..2002
@@ -48,7 +48,7 @@ class Passport(input: List<String>, onlyCheckFieldExistence: Boolean = false) {
         }
     }
 
-    fun checkHeight(heightCMorIN: String): Boolean {
+    private fun checkHeight(heightCMorIN: String): Boolean {
         if (heightCMorIN.length > 2) {
 
             val isCm = heightCMorIN[heightCMorIN.length - 2] == 'c' && heightCMorIN[heightCMorIN.length - 1] == 'm'

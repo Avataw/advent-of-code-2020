@@ -23,7 +23,7 @@ class PasswordValidation(input: List<String>) {
         .size in minimum..maximum
 
     fun validateB(): Boolean {
-        val passwordLetters = password.split("");
+        val passwordLetters = password.split("")
 
         return (passwordLetters[minimum] == letter && passwordLetters[maximum] != letter) ||
                 (passwordLetters[minimum] != letter && passwordLetters[maximum] == letter)

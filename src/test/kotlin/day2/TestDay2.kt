@@ -1,7 +1,8 @@
-import day2.solveA
-import day2.solveB
+package day2
+
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
+import readFileAsLinesUsingUseLines
 
 class TestDay2 {
 

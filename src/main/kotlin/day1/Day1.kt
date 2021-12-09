@@ -2,7 +2,7 @@ package day1
 
 fun solveA(input: List<String>): Int {
 
-    var result = 0;
+    var result = 0
     val inputNumbers = input.map { Integer.parseInt(it) }
 
     inputNumbers.forEach { outer ->
@@ -16,7 +16,7 @@ fun solveA(input: List<String>): Int {
 
 fun solveB(input: List<String>): Int {
 
-    var result = 0;
+    var result = 0
     val inputNumbers = input.map { Integer.parseInt(it) }
 
     inputNumbers.forEach { first ->

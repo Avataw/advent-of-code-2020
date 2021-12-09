@@ -24,7 +24,7 @@ class Geology(input: List<String>) {
     }
 
     fun countTreesHit(toboggan: Toboggan): Int {
-        var treesHit = 0;
+        var treesHit = 0
 
         while (toboggan.y < map.size) {
             if (map[toboggan.y][toboggan.x] == "#") {
@@ -43,7 +43,7 @@ fun solveA(input: List<String>): Int {
     val toboggan = Toboggan(3, 1)
 
     val geology = Geology(input)
-    return geology.countTreesHit(toboggan);
+    return geology.countTreesHit(toboggan)
 }
 
 fun solveB(input: List<String>): Long {
@@ -55,7 +55,7 @@ fun solveB(input: List<String>): Long {
         Toboggan(1,2)
     )
 
-    val geology = Geology(input);
+    val geology = Geology(input)
 
     return toboggans.map { geology.countTreesHit(it).toLong() }.reduce { prod, element -> prod * element }
 }
