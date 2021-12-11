@@ -55,7 +55,7 @@ class TestDay8 {
         val input = readFileAsLinesUsingUseLines(8)
 
         val solution = solveB(input)
-        assertEquals(7872, solution)
+        assertEquals(672, solution)
     }
 }
 

@@ -25,7 +25,6 @@ class Passport(input: List<String>, onlyCheckFieldExistence: Boolean = false) {
                 .filter { it.isNotEmpty() }
                 .map {
                     val field = it.split(":")
-                    println("label: ${field[0]} value: ${field[1]} && ${validateField(field[0], field[1])}")
                     validateField(field[0], field[1])
                 }.all { it }
         }
